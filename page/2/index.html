@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>扶摇直上鹏</title><meta name="author" content="扶摇直上鹏"><meta name="copyright" content="扶摇直上鹏"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="个人博客，用于分享一些在日常学习工作甚至于生活中遇到的一些比较有趣的东西。七荤八素，胡言乱语，望各位看官见谅。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="扶摇直上鹏">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="扶摇直上鹏">
+<meta property="og:description" content="个人博客，用于分享一些在日常学习工作甚至于生活中遇到的一些比较有趣的东西。七荤八素，胡言乱语，望各位看官见谅。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/null">
+<meta property="article:author" content="扶摇直上鹏">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2020-11-05 15:29:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">24</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">17</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">扶摇直上鹏</a></span><span id="menus"><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">扶摇直上鹏</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/Binder%20Driver/" title="Binder Driver">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Binder Driver"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/Binder%20Driver/" title="Binder Driver">Binder Driver</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.629Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Frameworks/">Frameworks</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Frameworks/Binder/">Binder</a></span></div><div class="content">本篇关注Binder驱动
+
+
+一.概述Binder驱动是Android专用的，但是他的底层框架与Linux驱动一样。Binder驱动在以misc设备进行注册，作为虚拟字符设备，没有直接硬件操作，只是对设备内存的处理。
+常用的操作有：初始化、打开、映射、数据操作。
+binder_init()：设备初始化，创建/dev/binder设备节点；
+binder_open()：获取Binder Driver的文件描述符；
+binder_mmap()：在内核分配一块内存，用于存放数据；
+binder_ioctl()：将IPC数据作为参数传递给Binder Driver；
+系统调用：用户态的程序调用kernel层驱动是需要陷入内核态进行系统调用的。比如说打开Binder驱动方法的调用链为：open（用户空间的方法）–&gt; __open() (系统调用中的处理方法) –&gt; binder_open()（内核Binder驱动的方法）。
+这里我们的源码分析基于Kernel-4.4.
+二.核心方法1.binder_init方法的实现是在：/drivers/android/binder.c中。主要的工 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/05/ANR%E5%92%8CSWT%E7%AE%80%E4%BB%8B/" title="SWT简介">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SWT简介"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/ANR%E5%92%8CSWT%E7%AE%80%E4%BB%8B/" title="SWT简介">SWT简介</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.624Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/">方法论</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/ANR-SWT/">ANR/SWT</a></span></div><div class="content">本篇先给大家简单介绍下SWT，给大家一些基础理解和认识。
+
+
+
+
+一.SWT简介SWT又称为SystemServer Watchdog，这个机制是用来监控核心服务和核心进程是否卡住。
+二.Watchdog简介watchdog，俗称看门狗。
+在SystemServer启动的时候，其startBootstrapServices方法中就会先去初始化和启动Watchdog。
+123456789private void startBootstrapServices() &#123;    // Start the watchdog as early as possible so we can crash the system server    // if we deadlock during early boot    traceBeginAndSlog(&quot;StartWatchdog&quot;);    final Watchdog watchdog = Watchdog.getInstance();    watchdog.start();    traceEnd();    . ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/AndroidManifest%E8%A7%A3%E6%9E%90/" title="AndroidManifest文件解析">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AndroidManifest文件解析"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/AndroidManifest%E8%A7%A3%E6%9E%90/" title="AndroidManifest文件解析">AndroidManifest文件解析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.615Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Android/">Android</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Android/%E9%80%86%E5%90%91/">逆向</a></span></div><div class="content">Android逆向专栏，我们这边先给大家解析一下AndroidManifest文件。
+
+
+一.简介AndroidManifest.xml文件在Android中我们称为清单文件。包含了应用的包名、权限、四大组件等信息。
+一般我们直接将APK修改格式为zip后解压缩生成的AndroidManifest.xml打开(比如用Notepad)会是一堆乱码。是因为在APP打包的过程中，清单文件被编译成了二进制数据存储在安装包中。
+所以，这里我们就来研究下AndroidManifest.xml的二进制文件结构，这样我们才可以获取到我们需要的信息。
+（当然有一些开源工具，比如apktool、AXmlPrinter等可以直接读取编译后的AndroidManifest文件）
+附上一张经典的结构图：
+
+下面我们以WhatsApp的AndroidManifest.xml文件为例进行分析。
+二.AndroidManifest.xml文件格式解析我们使用010 Edit打开WhatsApp的AndroidManifest.xml后，如下图：
+
+结合之前的结构图，AndroidManifest.xml的总体结构大致 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/05/AMS%E6%95%A3%E8%AE%B0/" title="AMS散记">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AMS散记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/AMS%E6%95%A3%E8%AE%B0/" title="AMS散记">AMS散记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.612Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Frameworks/">Frameworks</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Frameworks/ActivityManagerService/">ActivityManagerService</a></span></div><div class="content">本篇记录一些优秀博文的内容，散列中暂不进行归档整理
+
+
+一.Activity的架构Activity启动流程我们知道，系统层级是通过Context来调用startActivity，最终实现是在AMS中。而系统进程通过zygote的fork&amp;run 出的ActivityThread来接受从AMS中发出来的消息并处理。
+Activity的架构如下：
+
+二.ActivityThreadmain()函数是ActivityThread的入口：
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152public static void main(String[] args) &#123;    Trace.traceBegin(Trace.TRACE_TAG_ACTIVITY_MANAGER, &quot;ActivityThreadMain&quot;);    // Install selective syscall interception    An ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/AMS%E5%90%AF%E5%8A%A8/" title="AMS启动">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AMS启动"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/AMS%E5%90%AF%E5%8A%A8/" title="AMS启动">AMS启动</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.610Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Frameworks/">Frameworks</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Frameworks/ActivityManagerService/">ActivityManagerService</a></span></div><div class="content">ActivityManagerService是Android中的核心服务，主要是负责Android系统的四大组件的启动、切换、调度以及应用进程的管理和调度。此篇我们关注下AMS的启动流程。
+
+
+
+
+一.简述我们知道Zygote启动的时候会在ZygoteInit中fork一个名为system_server的过程。而SystemServer进程启动过程中会启动各种系统服务，系统服务中包含引导服务，而ActivityManagerService就是在这个时候被启动的。
+我们从SystemServer类的run方法开始分析AMS的启动流程。
+二.AMS的启动流程详解1、SystemServer#run1234567891011121314151617181920212223242526272829private void run() &#123;    ......    //加载libandroid_servers.so     System.loadLibrary(&quot;android_servers&quot;);    //创建SystemServiceManager     m ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/05/AMS%E6%9E%B6%E6%9E%84/" title="AMS架构">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AMS架构"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/AMS%E6%9E%B6%E6%9E%84/" title="AMS架构">AMS架构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.607Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Frameworks/">Frameworks</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Frameworks/ActivityManagerService/">ActivityManagerService</a></span></div><div class="content">本篇先给大家介绍下Frameworks中一个重要的系统服务：ActivityManagerService。他的系统架构是怎样的呢？可以看一看这篇的讲解。
+
+
+一.Activity的架构Activity启动流程我们知道，系统层级是通过Context来调用startActivity，最终实现是在AMS中。而系统进程通过zygote的fork&amp;run 出的ActivityThread来接受从AMS中发出来的消息并处理。
+Activity的架构如下：
+
+二.ActivityThreadmain()函数是ActivityThread的入口：
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152public static void main(String[] args) &#123;    Trace.traceBegin(Trace.TRACE_TAG_ACTIVITY_MANAGER, &quot;ActivityThreadMain&quot;); ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/26-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/" title="26-删除排序数组中的重复项">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="26-删除排序数组中的重复项"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/26-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/" title="26-删除排序数组中的重复项">26-删除排序数组中的重复项</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.596Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/LetCode-%E7%AE%80%E5%8D%95/">LetCode-简单</a></span></div><div class="content">LetCode刷题专栏
+
+
+
+
+一.简述给定一个排序数组，你需要在 原地 删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+示例：
+12345给定数组 nums &#x3D; [1,1,2], 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 你不需要考虑数组中超出新长度后面的元素。
+
+示例：
+12345给定 nums &#x3D; [0,0,1,1,1,2,2,3,3,4],函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。你不需要考虑数组中超出新长度后面的元素。
+
+说明：
+为什么返回数值是整数，但输出的答案是数组呢?
+请注意，输入数组是以「引用」方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
+你可以想象内部操作如下:
+12345678&#x2F;&#x2F; nums 是以“引用”方式传递的。也就是说，不对实参做任何拷贝int len &#x3D; removeDupl ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/05/20-%E6%9C%89%E6%95%88%E6%8B%AC%E5%8F%B7/" title="20-有效的括号">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="20-有效的括号"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/20-%E6%9C%89%E6%95%88%E6%8B%AC%E5%8F%B7/" title="20-有效的括号">20-有效的括号</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.593Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/LetCode-%E7%AE%80%E5%8D%95/">LetCode-简单</a></span></div><div class="content">LetCode刷题专栏
+
+
+
+
+一.简述描述：
+给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。
+有效字符串需满足：
+左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。注意空字符串可被认为是有效字符串。
+示例：
+1234567891011121314输入: &quot;()&quot;输出: true输入: &quot;()[]&#123;&#125;&quot;输出: true输入: &quot;(]&quot;输出: false输入: &quot;([)]&quot;输出: false输入: &quot;&#123;[]&#125;&quot;输出: true
+
+二.解法1.个人解法我的解法如下：
+12345678910111213141516class Solution &#123;    public boolean isValid(String s) &#123;        Stack&lt;Character&gt; stack= new Stack&lt;Character&gt;();        for( ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/14-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/" title="14-最长公共前缀">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="14-最长公共前缀"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/14-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/" title="14-最长公共前缀">14-最长公共前缀</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.582Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/LetCode-%E7%AE%80%E5%8D%95/">LetCode-简单</a></span></div><div class="content">LetCode刷题专栏
+
+
+
+
+一.简述描述：
+编写一个函数来查找字符串数组中的最长公共前缀。
+如果不存在公共前缀，返回空字符串 &quot;&quot;。
+示例：
+123456输入: [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]输出: &quot;fl&quot;输入: [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]输出: &quot;&quot;解释: 输入不存在公共前缀。
+
+注意：
+所有输入只包含小写字母 a-z 。
+二.解法1.个人解法我的解法如下：
+1234567891011121314151617class Solution &#123;    public String longestCommonPrefix(String[] strs) &#123;    if(strs.length == 0) &#123;        return &quot;&quot;;    &#125;    String result = strs[0];   ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/05/13-%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/" title="13-罗马数字转整数">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="13-罗马数字转整数"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/13-%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/" title="13-罗马数字转整数">13-罗马数字转整数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-05T07:28:55.580Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/LetCode-%E7%AE%80%E5%8D%95/">LetCode-简单</a></span></div><div class="content">LetCode刷题专栏
+
+
+
+
+一.简述描述：
+罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。
+字符          数值I             1V             5X             10L             50C             100D             500M             1000
+示例：
+12345678910111213141516输入: &quot;III&quot;输出: 3输入: &quot;IV&quot;输出: 4输入: &quot;IX&quot;输出: 9输入: &quot;LVIII&quot;输出: 58解释: L &#x3D; 50, V&#x3D; 5, III &#x3D; 3.输入: &quot;MCMXCIV&quot;输出: 1994解释: M &#x3D; 1000, CM &#x3D; 900, XC &#x3D; 90, IV &#x3D; 4.
+
+注意：
+罗马数字 2 写做 II ， ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">扶摇直上鹏</div><div class="author-info__description">个人博客，用于分享一些在日常学习工作甚至于生活中遇到的一些比较有趣的东西。七荤八素，胡言乱语，望各位看官见谅。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">24</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">17</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/%E6%95%B0%E7%BB%84/" title="数据结构-数组"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构-数组"/></a><div class="content"><a class="title" href="/2020/11/05/%E6%95%B0%E7%BB%84/" title="数据结构-数组">数据结构-数组</a><time datetime="2020-11-05T07:28:55.681Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" title="日常杂记"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常杂记"/></a><div class="content"><a class="title" href="/2020/11/05/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" title="日常杂记">日常杂记</a><time datetime="2020-11-05T07:28:55.679Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/%E9%9D%A2%E8%AF%95%E4%B8%93%E6%A0%8F/" title="面试专栏"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试专栏"/></a><div class="content"><a class="title" href="/2020/11/05/%E9%9D%A2%E8%AF%95%E4%B8%93%E6%A0%8F/" title="面试专栏">面试专栏</a><time datetime="2020-11-05T07:28:55.678Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/zygote/" title="zygote流程"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="zygote流程"/></a><div class="content"><a class="title" href="/2020/11/05/zygote/" title="zygote流程">zygote流程</a><time datetime="2020-11-05T07:28:55.676Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/05/Systrace%E8%A7%A3%E8%AF%BB/" title="Systrace解读"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Systrace解读"/></a><div class="content"><a class="title" href="/2020/11/05/Systrace%E8%A7%A3%E8%AF%BB/" title="Systrace解读">Systrace解读</a><time datetime="2020-11-05T07:28:55.672Z" title="Created 2020-11-05 15:28:55">2020-11-05</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>Categories</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">1</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Android/%E9%80%86%E5%90%91/"><span class="card-category-list-name">逆向</span><span class="card-category-list-count">1</span></a></li></ul><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Frameworks/"><span class="card-category-list-name">Frameworks</span><span class="card-category-list-count">8</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Frameworks/ActivityManagerService/"><span class="card-category-list-name">ActivityManagerService</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Frameworks/Binder/"><span class="card-category-list-name">Binder</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Frameworks/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/"><span class="card-category-list-name">系统启动</span><span class="card-category-list-count">3</span></a></li></ul><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"><span class="card-category-list-name">性能优化</span><span class="card-category-list-count">3</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/Prefetto/"><span class="card-category-list-name">Prefetto</span><span class="card-category-list-count">1</span></a></li></ul>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories/">
+                <span>More</span><i class="fas fa-angle-right"></i></a></li>
+            </ul></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">November 2020</span><span class="card-archive-list-count">24</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">24</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-05T07:29:20.581Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By 扶摇直上鹏</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
