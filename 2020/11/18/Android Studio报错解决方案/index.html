@@ -152,7 +152,7 @@ if (asideStatus !== undefined) {
 <p><strong>原因</strong>：这个网址一直无法成功获取资源，只要带有<a target="_blank" rel="noopener" href="https://dl.google.com/dl/android/maven2/com/%E8%BF%99%E6%A0%B7%E7%9A%84%E9%93%BE%E6%8E%A5%E9%83%BD%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E3%80%82%E6%89%80%E4%BB%A5%E4%B8%80%E7%9B%B4%E6%97%A0%E6%B3%95%E5%90%8C%E6%AD%A5%E6%88%90%E5%8A%9F%E3%80%82">https://dl.google.com/dl/android/maven2/com/这样的链接都无法下载。所以一直无法同步成功。</a></p>
 <p>解决方案：仓库不可访问导致，由于google() 这个仓库地址是： <a target="_blank" rel="noopener" href="https://dl.google.com/dl/android/maven2/com/">https://dl.google.com/dl/android/maven2/com/</a> ，可能会出现无法访问的情况， 这时候只需要优先使用国内的阿里云仓库就可以了。</p>
 <p>1.修改build.gradle中的repositories</p>
-<p><img src="C:\Users\peng.zhang\AppData\Roaming\Typora\typora-user-images\image-20201118015057054.png" alt="image-20201118015057054"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201118021752846.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pwbHhsOTk=,size_16,color_FFFFFF,t_70#pic_center"></p>
 <p>方便大家拷贝，给出文本：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">maven&#123; url &#39;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;google&#39;&#125;</span><br><span class="line"></span><br><span class="line">maven&#123; url &#39;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;gradle-plugin&#39;&#125;</span><br><span class="line"></span><br><span class="line">maven&#123; url &#39;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&#39;&#125;</span><br><span class="line"></span><br><span class="line">maven&#123; url &#39;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;jcenter&#39;&#125;</span><br></pre></td></tr></table></figure>
 
@@ -161,7 +161,7 @@ if (asideStatus !== undefined) {
 
 
 <p>2.修改gradle.properties</p>
-<p><img src="C:\Users\peng.zhang\AppData\Roaming\Typora\typora-user-images\image-20201118015222280.png" alt="image-20201118015222280"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201118021807757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pwbHhsOTk=,size_16,color_FFFFFF,t_70#pic_center"></p>
 <p>方便大家拷贝，给出文本：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">systemProp.http.proxyHost&#x3D;</span><br><span class="line"></span><br><span class="line">systemProp.http.proxyPort&#x3D;</span><br><span class="line"></span><br><span class="line">systemProp.https.proxyHost&#x3D;</span><br><span class="line"></span><br><span class="line">systemProp.https.proxyPort&#x3D;</span><br></pre></td></tr></table></figure>
 
