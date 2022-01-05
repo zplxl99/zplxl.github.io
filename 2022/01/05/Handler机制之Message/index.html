@@ -166,19 +166,14 @@
 </ul>
 <h3 id="2-obtain方法"><a href="#2-obtain方法" class="headerlink" title="2.obtain方法"></a>2.obtain方法</h3><p>&emsp;&emsp;Message类中有多个obtain方法：</p>
 <ul>
-<li><pre><code>obtain()
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;</span><br><span class="line">  obtain(Message orig)</span><br></pre></td></tr></table></figure></code></pre>
-</li>
-<li><pre><code>obtain(Handler h)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;</span><br><span class="line">  obtain(Handler h, Runnable callback)</span><br></pre></td></tr></table></figure></code></pre>
-</li>
-<li><pre><code>obtain(Handler h, int what)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;</span><br><span class="line">  obtain(Handler h, int what, Object obj) </span><br></pre></td></tr></table></figure></code></pre>
-</li>
-<li><pre><code>obtain(Handler h, int what, int arg1, int arg2)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;</span><br><span class="line">  obtain(Handler h, int what,int arg1, int arg2, Object obj)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
+<li>obtain()</li>
+<li>obtain(Message orig)</li>
+<li>obtain(Handler h)</li>
+<li>obtain(Handler h, Runnable callback)</li>
+<li>obtain(Handler h, int what)</li>
+<li>obtain(Handler h, int what, Object obj) </li>
+<li>obtain(Handler h, int what, int arg1, int arg2)</li>
+<li>obtain(Handler h, int what,int arg1, int arg2, Object obj)</li>
 </ul>
 <p>&emsp;&emsp;这些方法中都会调用到obtain()，我们看下obtain()的实现：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Message <span class="title">obtain</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">synchronized</span> (sPoolSync) &#123;</span><br><span class="line">        <span class="keyword">if</span> (sPool != <span class="keyword">null</span>) &#123;</span><br><span class="line">            Message m = sPool;</span><br><span class="line">            sPool = m.next;</span><br><span class="line">            m.next = <span class="keyword">null</span>;</span><br><span class="line">            m.flags = <span class="number">0</span>; <span class="comment">// clear in-use flag</span></span><br><span class="line">            sPoolSize--;</span><br><span class="line">            <span class="keyword">return</span> m;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Message();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
